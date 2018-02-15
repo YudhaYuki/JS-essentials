@@ -62,7 +62,7 @@ var shoppingList = [
 */
 
 /////////////////--------- EMBEDDING OBJECTS & ARRAYS --------------/////////////////
-
+/*
 var car = {
     make: "Volvo",
     speed: 160,
@@ -92,3 +92,39 @@ var array = [
     // In array, we can not define a name for our function in the same way, it's give a number.
     function() { return "drive";}
 ];
+*/
+
+
+
+/////////////////--------- MEMBERS ACCESS --------------/////////////////
+
+var car = {
+    make: "volvo",
+    speed: 160,
+    engine: {
+        size: 2.0,
+        make: "bmw",
+        fuel: "petrol",
+        pistons:[
+            { maker: "BMW" },
+            { maker: "BMW2" }
+        ]
+    },
+    drive: function(){ return "drive"; }
+};
+
+var array = [ 
+    "string",
+    100,
+    [ "embed", 200 ],
+    { car: "ford" },
+    function(){ return "drive"; }
+];
+
+console.log( car.make );
+
+console.log(car.engine.size);
+
+console.log(car.drive());
+
+console.log(car.engine.pistons);
