@@ -20,6 +20,7 @@ console.log( "string", 10.11, true, false, null, num );
 
 /////////////////--------- FUNCTION or SUBROUTINE --------------/////////////////
 
+/*
 function makeCoffee(sugar, milk) 
 {
     var instructions = "Boil water,";
@@ -36,3 +37,24 @@ function makeCoffee(sugar, milk)
 }
 
 console.log(makeCoffee(20, 50));
+*/
+
+
+
+/////////////////--------- OBJECTS and ARRAYS --------------/////////////////
+
+var car = {
+    color : "red",
+    speed : 200,
+    drive : function() { 
+            return "drive";
+            }
+};
+
+// console.log(car);
+
+var shoppingList = [
+    "Apple",
+    "Orange",
+    "Pear"
+];
