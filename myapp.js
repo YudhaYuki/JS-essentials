@@ -43,6 +43,7 @@ console.log(makeCoffee(20, 50));
 
 /////////////////--------- OBJECTS and ARRAYS --------------/////////////////
 
+/*
 var car = {
     color : "red",
     speed : 200,
@@ -57,4 +58,37 @@ var shoppingList = [
     "Apple",
     "Orange",
     "Pear"
+];
+*/
+
+/////////////////--------- EMBEDDING OBJECTS & ARRAYS --------------/////////////////
+
+var car = {
+    make: "Volvo",
+    speed: 160,
+    // object
+    engine: {
+        size: 2.1,
+        make: "bmw",
+        fuel: "petrol",
+        // Array
+        pistons: [
+            // object
+             {maker: "BMW"}, 
+             {maker: "BMW2"} ]
+    },
+
+    // Method, because it has key name
+    drive: function() { return "drive"; }
+ };
+
+var array = [
+    "string", 
+    100, 
+    // Array
+    ["embedded", 200],
+    // Object
+    { car: "ford"},
+    // In array, we can not define a name for our function in the same way, it's give a number.
+    function() { return "drive";}
 ];
