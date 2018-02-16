@@ -441,7 +441,7 @@ console.log(
 
 
 /////////////////--------- MEMORY HOISTING --------------/////////////////
-
+/*
 console.log( myName, printName() );
 
 var myName = "Yudha";
@@ -453,6 +453,51 @@ function printName()
     var a = 100;
 
     function embed() { return "Hello"; }
-    
+
     return "Wijaya Yuki";
 }
+*/
+
+
+/////////////////--------- SCOPE and CLOSURES --------------/////////////////
+
+var engine = {
+    maker: "Ford",
+    headGasket:{
+        maker: "Golf",
+        pots:[
+            "piston1",
+            "piston2"
+        ]
+    }
+};
+
+
+function runExpression()
+{   
+    var a = 10;
+    
+    function add(b)
+    {   
+        // var b = 90;
+
+        // return a + b;
+
+        return a + b;
+    }
+    
+    // return 100;
+    console.log(
+        add(90),
+        add(20)
+    );
+}
+
+
+
+
+
+/////////////////--------- SCOPE and CLOSURES --------------/////////////////
+
+
+
