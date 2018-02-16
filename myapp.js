@@ -408,7 +408,7 @@ console.log(
 );
 */
 
-
+/*
 function name(fullName) 
 {
     return fullName();
@@ -417,6 +417,7 @@ function name(fullName)
 console.log(
     name( function() { return "embed"; } )
 );
+*/
 
 
 
@@ -437,3 +438,21 @@ console.log(
         0 : function(){}
     ];
 */
+
+
+/////////////////--------- MEMORY HOISTING --------------/////////////////
+
+console.log( myName, printName() );
+
+var myName = "Yudha";
+
+function printName() 
+{
+    console.log( a, embed());
+
+    var a = 100;
+
+    function embed() { return "Hello"; }
+    
+    return "Wijaya Yuki";
+}
