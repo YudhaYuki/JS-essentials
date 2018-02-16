@@ -588,7 +588,7 @@ function runExpression()
 /////////////////--------- THIS CONTEXT --------------/////////////////
 
 //console.log( this );
-
+/*
 var object = {
     prop: this,
     embed:
@@ -610,6 +610,9 @@ function global(){
 global.call(object);
 
 new global();
+*/
+
+
 
 /*
 // Normal invokation
@@ -628,3 +631,21 @@ new object.embed.method( object );
 new array[1]();
 */
 
+
+
+
+
+/////////////////--------- CONSTRUCTORS --------------/////////////////
+
+function Apple(x, y , color, score) 
+{
+    this.x = x;
+    this.y = y;
+    this.color = color;
+    this.score = score;
+    
+}
+var apple1 = new Apple(10, 20, "red", 200);
+// It's like this var apple1 = {x: 10, y: 20, color: "red", score: 200};
+var apple2 = new Apple(10, 20, "green", 200);
+var apple3 = new Apple(10, 20, "pink", 200);
