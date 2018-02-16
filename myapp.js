@@ -226,7 +226,7 @@ car[ pointer ];
 
 
 /////////////////--------- MEMBER CREATION, ASSIGNMENT & DELETION --------------/////////////////
-
+/*
 var car = {
     make: "volvo",
     speed: 160,
@@ -301,3 +301,65 @@ console.log(car.make);
 // delete car.stop;
 
 // car
+*/
+
+/////////////////--------- ARRAY MODIFICATION --------------/////////////////
+/*
+var array = [ 
+    "string",
+    "hello",
+    "world200",
+    100,
+    function(){ return "drive"; },
+
+];
+*/
+
+var array = [ 
+    "string",
+    100,
+    ["embed", 200],
+    { car: "ford"},
+    function(){ return "drive"; },
+
+];
+
+// In console
+
+// array[0];
+
+// array[0] = "new string";
+
+// array
+
+// array[0] += " concat";
+
+
+
+
+// ADDING NEW ARRAY
+// array[5] = "New string"; // This is only good if we know the next arraye key, otherwise it cost a lot of memory
+// array
+
+// anohter way, but this is not good, because array must be numerical.
+// array["test"] = "test";
+
+// array.test2 = "test2";
+
+// ["string concat", "hello", "world200", 100, ƒ, "New string", empty × 14, 2020, test: "test", test2: "test2"]
+
+
+// FINDING OUT HOW MANY ELEMENT IN THE ARRAY
+// array.length
+
+
+// MORE METHODS
+// array.shift(); // Take off first element
+// array.pop(); // Take off last element
+
+// array.unshift("string", 20, 20.20, function(){}, {}, []); // Adding item into the beginning
+// array.push(200, 300, "string"); // dding item into the end
+
+// array.splice(2, 2); // delete items
+// array.splice(1, 0, "hello", "world", 200); // Adding items
+// array.splice(2, 2, "world200"); // placing in new element
