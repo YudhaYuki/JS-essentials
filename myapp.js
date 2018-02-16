@@ -314,7 +314,7 @@ var array = [
 
 ];
 */
-
+/*
 var array = [ 
     "string",
     100,
@@ -323,6 +323,7 @@ var array = [
     function(){ return "drive"; },
 
 ];
+*/
 
 // In console
 
@@ -363,3 +364,76 @@ var array = [
 // array.splice(2, 2); // delete items
 // array.splice(1, 0, "hello", "world", 200); // Adding items
 // array.splice(2, 2, "world200"); // placing in new element
+
+
+
+
+
+
+/////////////////--------- CALLABLE OBJECTS --------------/////////////////
+/*
+function name() 
+{
+    var fullName = "Yudha Yuki";
+
+    function concat(ngaran) 
+    {
+        return "MR." + ngaran;
+    }
+
+    return concat(fullName);
+}
+*/
+
+/*
+function name(fullName) 
+{
+    return fullName.firstName + fullName.lastName;
+}
+
+console.log(
+    name( {firstName: "Yudha", lastName: "Yuki"} )
+);
+*/
+
+
+/*
+function name(fullName) 
+{
+    return fullName;
+}
+
+console.log(
+    name( function() { return "embed"; } )
+);
+*/
+
+
+function name(fullName) 
+{
+    return fullName();
+}
+
+console.log(
+    name( function() { return "embed"; } )
+);
+
+
+
+// Objects inside of objects, we can have a standard object literal right here
+// and methods are in fact sub-routines or callable objects nested inside of an object
+/*
+    var obj = 
+    {
+        method: function(){}
+    };
+*/
+
+// The same thing for array, just it does not have a method name.
+// They're just element inside of the array.
+/*
+    var obj = 
+    [
+        0 : function(){}
+    ];
+*/
