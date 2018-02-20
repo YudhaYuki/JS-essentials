@@ -737,7 +737,7 @@ var apple3 = new Apple("yellow", 299);
 
 
 
-
+/*
 var pHello = document.getElementById('hello');
 
 pHello.innerText = "New world";
@@ -755,3 +755,28 @@ pHello.innerHTML += '<h2 id="hello"> New world order <span> hellow world</span><
 var spanH1 = document.querySelectorAll('h1 span');
 
 spanH1[0].innerHTML = "new text here!!!";
+
+*/
+
+
+/////////////////--------- DOM - Changing element sstyle --------------/////////////////
+
+var el = document.getElementById('style');
+
+
+el.style.background = "yellow";
+/*
+el.style.color = "white";
+el.style.width = "200px";
+
+
+el.style.cssText = "background:blue; color:white; width:200px";
+
+el.style.cssText += "height:100px;";
+*/
+
+console.log( getComputedStyle(el) );
+
+
+
+
