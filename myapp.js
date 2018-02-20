@@ -795,24 +795,22 @@ select.onclick = function() {
 
 
 
-select.addEventListener('click', function( event ) {
-    console.log( 'clicked by add event listener' );
-})
+// select.addEventListener('click', function( event ) {
+//     console.log( 'clicked by add event listener' );
+// })
 
-select.addEventListener('click', function( event ) {
-    console.log( 'clicked by add event listener 2' );
-})
+// select.addEventListener('click', function( event ) {
+//     console.log( 'clicked by add event listener 2' );
+// })
 
-// Remove events
-// select.removeEventListener('click', symbolName);
 
-// function ClickCallBack( event ) {
-//     console.log ('Clicked by add event listener');
-// }
-
+function ClickCallBack( event ) {
+    console.log ('Clicked by add event listener');
+}
 
 
 // we can have multiple event
-// select.addEventListener('click', ClickCallBack);
+select.addEventListener('click', ClickCallBack);
 
-// select.removeEventListener('click', ClickCallBack);
+// remove
+select.removeEventListener('click', ClickCallBack);
