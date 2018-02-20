@@ -760,12 +760,12 @@ spanH1[0].innerHTML = "new text here!!!";
 
 
 /////////////////--------- DOM - Changing element sstyle --------------/////////////////
-
+/*
 var el = document.getElementById('style');
 
 
 el.style.background = "yellow";
-/*
+
 el.style.color = "white";
 el.style.width = "200px";
 
@@ -773,10 +773,46 @@ el.style.width = "200px";
 el.style.cssText = "background:blue; color:white; width:200px";
 
 el.style.cssText += "height:100px;";
-*/
+
 
 console.log( getComputedStyle(el) );
+*/
 
 
 
 
+
+
+
+/////////////////--------- DOM - Event handlers --------------/////////////////
+
+
+var select = document.getElementsByName('cars')[0];
+
+select.onclick = function() {
+    console.log( event );
+};
+
+
+
+select.addEventListener('click', function( event ) {
+    console.log( 'clicked by add event listener' );
+})
+
+select.addEventListener('click', function( event ) {
+    console.log( 'clicked by add event listener 2' );
+})
+
+// Remove events
+// select.removeEventListener('click', symbolName);
+
+// function ClickCallBack( event ) {
+//     console.log ('Clicked by add event listener');
+// }
+
+
+
+// we can have multiple event
+// select.addEventListener('click', ClickCallBack);
+
+// select.removeEventListener('click', ClickCallBack);
