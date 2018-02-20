@@ -823,7 +823,7 @@ select.removeEventListener('click', ClickCallBack);
 
 
 /////////////////--------- DOM - Create & appendChild & isertbefore methods --------------/////////////////
-
+/*
 var element = document.createElement('div');
 
 element.style.cssText = "width:200px; height:20px; background:blue;";
@@ -835,3 +835,30 @@ element.onclick = function() { alert('hello'); };
 var target = document.getElementById('yellow');
 
 document.body.insertBefore( element, target );
+*/
+
+
+
+
+/////////////////--------- FINAL EXAMPLE --------------/////////////////
+
+
+let elements = document.getElementsByName('cssProperty');
+
+let div = document.getElementById('modify');
+
+function set()
+{
+    
+    for( let index = 0; index < elements.length; index++ )
+    {
+        let cssProperty = elements[ index ].getAttribute('id');
+        
+        let cssValue = elements[ index ].value;
+        
+        div.style[ cssProperty ] = cssValue;
+    }
+}
+
+document.getElementById('set').addEventListener('click',set);
+
