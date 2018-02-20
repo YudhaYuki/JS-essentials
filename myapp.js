@@ -713,3 +713,45 @@ var apple3 = new Apple("yellow", 299);
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+/////////////////--------- DOM --------------/////////////////
+
+
+// console.log(document.getElementById('hello'));
+
+// console.dir(document.getElementById('hello'));
+
+// document.getElementById('hello').innerText = "New world";
+
+// document.getElementById('hello').innerText += " order";
+
+
+
+
+var pHello = document.getElementById('hello');
+
+pHello.innerText = "New world";
+
+pHello.innerHTML += " order <span> hello world </span>";
+
+
+
+// outer text
+pHello.innerHTML += '<h2 id="hello"> New world order <span> hellow world</span><h2>';
+
+// pHello.outerText += '<h2 id="hello"> New world order <span> hellow world</span><h2>';
+
+
+var spanH1 = document.querySelectorAll('h1 span');
+
+spanH1[0].innerHTML = "new text here!!!";
