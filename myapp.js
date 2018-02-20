@@ -786,7 +786,7 @@ console.log( getComputedStyle(el) );
 
 /////////////////--------- DOM - Event handlers --------------/////////////////
 
-
+/*
 var select = document.getElementsByName('cars')[0];
 
 select.onclick = function() {
@@ -814,3 +814,24 @@ select.addEventListener('click', ClickCallBack);
 
 // remove
 select.removeEventListener('click', ClickCallBack);
+
+*/
+
+
+
+
+
+
+/////////////////--------- DOM - Create & appendChild & isertbefore methods --------------/////////////////
+
+var element = document.createElement('div');
+
+element.style.cssText = "width:200px; height:20px; background:blue;";
+
+element.onclick = function() { alert('hello'); };
+
+// document.body.appendChild( element );
+
+var target = document.getElementById('yellow');
+
+document.body.insertBefore( element, target );
