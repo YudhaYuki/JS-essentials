@@ -636,7 +636,7 @@ new array[1]();
 
 
 /////////////////--------- CONSTRUCTORS --------------/////////////////
-
+/*
 function Apple(x, y , color, score) 
 {
     this.x = x;
@@ -649,3 +649,67 @@ var apple1 = new Apple(10, 20, "red", 200);
 // It's like this var apple1 = {x: 10, y: 20, color: "red", score: 200};
 var apple2 = new Apple(10, 20, "green", 200);
 var apple3 = new Apple(10, 20, "pink", 200);
+*/
+
+
+
+
+
+
+/////////////////--------- PROTOTYPE --------------/////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////--------- CONSTRUCTOR with PROTOTYPE --------------/////////////////
+/*
+function Apple(color, weight) 
+{
+    this.color = color;
+    this.weight = weight;
+}
+
+Apple.prototype = {
+    // eat : function() {return "eat the apple";},
+    // change 1
+    eat : function() {return this;},    
+    throw : function() {return "throw the apple";}
+};
+
+var apple1 = new Apple("red", 99);
+var apple2 = new Apple("green", 109);
+var apple3 = new Apple("yellow", 299);
+
+
+// apple1.eat();
+// apple2.eat();
+// apple3.eat();
+
+// Changing sub rutine from the console
+// Apple.prototype.eat = function() { return "new apple eaten !!!"};
+
+
+// Change 1
+// apple2.eat();
+*/
+
+
+
+
+
+
+
+
+/////////////////--------- COMPARISON OPERATOR --------------/////////////////
+
+
+
